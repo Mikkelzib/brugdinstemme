@@ -1,0 +1,243 @@
+
+
+html,
+body
+{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body
+{
+background: #aae3e8;
+  overflow-x: hidden;
+}
+
+h1
+{
+  font-size: 20px;
+  font-weight: normal;
+  color: #2e6e80;
+}
+
+#person  {
+ position: fixed;
+	top: 50%;
+	left: 10%;
+	z-index: 1;
+}
+
+.scroll
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+
+.horizon
+{
+  z-index: 300;
+  width: 4000px;
+}
+
+
+.front
+{
+  z-index: 1000;
+  width: 6px;
+}
+
+.fadein {
+    animation-name: fadein;
+    -webkit-animation-name: fadein;
+    animation-duration: 30000s;
+    -webkit-animation-duration: 30000s;
+    visibility: visible;
+	transition: all .4s ease-out;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+		
+        -webkit-transform: translateY(70%);
+		transform: translateY(70%);
+		transform: scale(10,10);
+		-webkit-transform: scale(10,10);
+		transition: all .4s ease-out;
+    } 
+	0.01% {
+		opacity: 1;
+	}
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+		transform: translateY(0%);
+		transform: scale(10,10);
+		-webkit-transform:scale(10,10);
+		transition: all .4s ease-out;
+		
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+		transform: translateY(70%);
+		transform: scale(10,10);
+		-webkit-transform: scale(10,10);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+		transform: translateY(0%);
+		transform: scale(10,10);
+		-webkit-transform: scale(10,10);
+    }
+}
+
+.synlig {
+	width: 200px;
+}
+
+#textbox {
+	position: absolute;
+	top: 30%;
+	left: 20%;
+	border: 1px solid #00000;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px 1px #606060 ;
+	background-color: #ffffff;
+	transition: all .4s ease-out;
+	padding: 2px 2px 2px 2px;
+	font-size: 2pt;
+}
+
+#textbox2 {
+	position: absolute;
+	top: 10%;
+	left: 35%;
+	border: 1px solid #00000;
+	border-radius: 5px;
+	box-shadow:2px 2px 3px 1px #606060 ;
+	background-color: #ffffff;
+	transition: all .4s ease-out;
+	font-size: 2pt;
+	padding: 2px 5px 2px 5px;
+}
+
+#textbox3 {
+	position: absolute;
+	top: 50%;
+	left: 45%;
+	border: 1px solid #00000;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px 1px #606060 ;
+	background-color: #ffffff;
+	transition: all .4s ease-out;
+	font-size: 2pt;
+	padding: 2px 5px 2px 5px;
+}
+#textbox4 {
+	position: absolute;
+	top: 14%;
+	left: 58%;
+	border: 1px solid #00000;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px 1px #606060 ;
+	background-color: #ffffff;
+	transition: all .4s ease-out;
+	font-size: 2pt;
+	padding: 2px 5px 2px 5px;
+}
+
+#menu {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: flex-end;
+align-content: flex-start;
+text-align: center;
+height: 60px;
+
+}
+
+#menu div {
+	margin: 2px;
+	padding: 2px;
+    width: 300px;
+	height: 40px;
+	margin-top: 10px;
+}
+
+#mand {
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	z-index: 1;
+}
+#hus {
+	position: absolute;
+	top: 10%;
+	left: 70%;
+	z-index: 2;
+}
+
+#vej {
+	position: absolute;
+	bottom: 0;
+}
+
+#tekst {
+	width: 25%;
+	height: 40%;
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	font-size: 20pt;
+	min-width: 25%;
+}
+#knap {
+	background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 5px;
+	transition: all .4s ease-out;
+	margin-left: 25%;
+}
+
+#knap:hover{
+	transform: scale(1.4);
+	transition: all .4s ease-out;
+}
+
+textbox p {
+    font-size: 2pt;
+}
+
+#myImg li {
+	font-size: 2pt;
+	padding: 0;
+}
+
+#husk {
+	background-color: #7caeff;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+#tale {
+	position: absolute;
+	bottom: 70%;
+	left:87%;
+	z-index: 50;
+}
